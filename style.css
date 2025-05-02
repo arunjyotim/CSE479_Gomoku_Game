@@ -1,0 +1,170 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    color:rgb(251, 226, 85);
+    text-shadow: 5px 5px 4px rgba(59, 5, 185, 0.7); 
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#score-board-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#score-board {
+    
+    margin: 0px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 0px 10px 3px rgba(0, 255, 255, 0.6);
+    border: 3px solid #ff00ff; 
+    
+}
+
+
+#score-board #timer {
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    color:rgb(255, 2, 2); 
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.7); 
+}
+
+#score-board h2 {
+    font-size: 24px;
+    color: #ff00ff; /* Neon purple for header */
+    text-align: center;
+}
+
+#score-board p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+#score-board #current-player {
+    font-weight: bold;
+}
+
+#game-board {
+    display: grid;
+    grid-gap: 3px; 
+    justify-content: center;
+    margin: 20px auto;
+    
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(179, 142, 193);  
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cell.hover-player1:hover {
+    background-color: rgb(97, 32, 176); 
+}
+
+.cell.hover-player2:hover {
+    background-color: rgb(230, 89, 18); 
+}
+
+.cell.circle-player,
+.cell.circle-player2 {
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+}
+
+.cell.circle-player {
+    background-color: rgb(97, 32, 176);
+}
+
+.cell.circle-player2 {
+    background-color: rgb(230, 89, 18);
+}
+
+#score-board #current-player.player1 {
+    color:rgb(136, 64, 225);
+}
+
+#score-board #current-player.player2 {
+    color:rgb(230, 89, 18);
+}
+button {
+    background-color:rgb(106, 16, 252);
+    font-family: 'Press Start 2P'; 
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color:rgb(253, 138, 44);
+    font-family: 'Press Start 2P'; 
+}
+
+#credit-container{
+    display: flex;
+    justify-content: center;
+
+}
+/* Credit card styling */
+#credit {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 3px rgba(0, 255, 255, 0.6); /* Neon glow */
+    font-family: 'Press Start 2P', cursive;
+    border: 3px solid #ff00ff; /* Neon purple border */
+    
+}
+
+#credit h2 {
+    font-size: 24px;
+    color: #ff00ff; /* Neon purple for header */
+    text-align: center;
+}
+
+#credit p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: rgb(134, 134, 133);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Shadow effect for text */
+}
+
+/* Stylized text for the credit information */
+#credit strong {
+    color:rgb(207, 176, 53); /* Neon yellow for labels */
+}
